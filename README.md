@@ -44,7 +44,7 @@ O professor também explica como configurar uma máquina virtual para suportar o
 Simule esse projeto em https://wokwi.com/projects/441017555603997697
 
 ## Mais informações 
-Para mais informações e explicações de como utilizar a ferramenta FIWARE em https://github.com/fabiocabrini/fiware
+Para mais informações e explicações de como utilizar a ferramenta FIWARE e outras como MongoDB, Postman visite o repositório do professor Fabio Cabrini [FIWARE Descomplicado](https://github.com/fabiocabrini/fiware)
 
 ## Colaboradores
 
