@@ -26,7 +26,6 @@ O professor também explica como configurar uma máquina virtual para suportar o
 
 ---
 
-
 ## Instalação de Software
 
 1. Instale a [Arduino IDE](https://www.arduino.cc/en/software).
@@ -38,7 +37,17 @@ O professor também explica como configurar uma máquina virtual para suportar o
    const char* default_SSID = "Wokwi-GUEST"; // Nome da rede
    const char* default_PASSWORD = ""; // senha da rede
    const char* default_BROKER_MQTT = "20.163.23.245"; // Endereço de ip da VM
-   const int default_BROKER_PORT = 1883; 
+   const int default_BROKER_PORT = 1883;
+
+
+**Lembre-se também de alterar o ID da lampada no código e no postman se for fazer o teste do projeto através Wokwi 
+   ```cpp
+   const char* default_TOPICO_SUBSCRIBE = "/TEF/lamp101/cmd";   
+   const char* default_TOPICO_PUBLISH_1 = "/TEF/lamp101/attrs"; 
+   const char* default_TOPICO_PUBLISH_2 = "/TEF/lamp101/attrs/l"; 
+   const char* default_ID_MQTT = "fiware_101";       
+   const char* topicPrefix = "lamp101";
+   ```
 
 ## Simulação do Código
 Simule esse projeto em https://wokwi.com/projects/441017555603997697
