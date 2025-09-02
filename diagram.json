@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "author": "Nicolas Mendes dos Santos",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": 89.6,
+      "left": -248.8,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "ldr1:VCC", "esp:3V3", "red", [ "v-76.8", "h81.41" ] ],
+    [ "ldr1:GND", "esp:GND.2", "black", [ "h9.6", "v-134.8", "h172.8" ] ],
+    [ "ldr1:AO", "esp:34", "green", [ "h19.2", "v-67.9" ] ]
+  ],
+  "dependencies": {}
+}
